@@ -79,10 +79,10 @@ void outStrcpy() {
 }
 
 int main() {
-    //outStrlen();
-    //outStrcmp();
-    //outStrchr();
-    //outStrcat();
+    outStrlen();
+    outStrcmp();
+    outStrchr();
+    outStrcat();
     outStrcpy();
 
     return 0;
