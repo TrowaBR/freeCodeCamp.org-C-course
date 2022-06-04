@@ -83,11 +83,11 @@ int min(const int a, const int b) {
 }
 
 int main() {
-    //funcSingleParamNoResult();
-    //funcMultParamResult();
-    //funcNoParamNoResult();
-    //funcNoParamResult();
-    //changesInsideFunc();
+    funcSingleParamNoResult();
+    funcMultParamResult();
+    funcNoParamNoResult();
+    funcNoParamResult();
+    changesInsideFunc();
     funcDeclDefition();
 
     return 0;
