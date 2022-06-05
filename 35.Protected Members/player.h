@@ -11,6 +11,8 @@ class Player : public Person {
     public :
         Player() = default;
         Player(std::string_view game_param, std::string_view first_name_param, std::string_view last_name_param);
+
+        using Person::m_first_name; // Resurect member back in context
     private :
         std::string m_game{"None"};
 };
