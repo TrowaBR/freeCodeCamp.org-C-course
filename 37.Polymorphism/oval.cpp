@@ -11,6 +11,10 @@ void Oval::draw() const {
                            ": [ x_radius: " << m_x_radius << " | y_radius: " << m_y_radius << " ]" << std::endl;
 }
 
+Oval::~Oval() {
+    std::cout << "~Oval::" << m_description << std::endl;
+}
+
 double Oval::get_x_radius() const {
     return m_x_radius;
 }

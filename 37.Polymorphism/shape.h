@@ -8,6 +8,7 @@ class Shape {
     public :
         Shape() = default;
         Shape(std::string_view description_param);
+        virtual ~Shape();
 
         virtual void draw() const; // "virtual" costs 8 bytes
     protected :

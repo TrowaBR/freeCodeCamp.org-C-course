@@ -7,8 +7,9 @@ class Oval : public Shape {
     public :
         Oval() = default;
         Oval(std::string_view description_param, double x_radius_param, double y_radius_param);
+        virtual ~Oval();
 
-        virtual void draw() const override; // "virtual" costs 8 bytes
+        void draw() const override; // "virtual" costs 8 bytes
     protected :
         double get_x_radius() const;
     private :

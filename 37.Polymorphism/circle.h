@@ -3,12 +3,13 @@
 
 #include "oval.h"
 
-class Circle : public Oval {
+class Circle final : public Oval {
     public :
         Circle() = default;
         Circle(std::string_view description_param, double radius_param);
+        virtual ~Circle();
 
-        virtual void draw() const override; // "virtual" costs 8 bytes
+        void draw() const override final; // "virtual" costs 8 bytes
 };
 
 #endif // CIRCLE_H

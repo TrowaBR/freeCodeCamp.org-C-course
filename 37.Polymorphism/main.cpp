@@ -25,7 +25,7 @@ int main() {
     Shape& shape_ref2 = oval1; shape_ref2.draw();
     Shape& shape_ref3 = circle1; shape_ref3.draw();
 
-    // Without pointer or reference, compiler will slice children data
+    // Data slicing for not using pointer/reference:
     std::cout << std::endl;
     std::cout << "Data slicing for not using pointer/reference:" << std::endl;
     Shape shapes[]{shape1, oval1, circle1};
